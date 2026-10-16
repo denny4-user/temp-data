@@ -1,1 +1,1 @@
-# jhjh
+launchctl unload /Library/LaunchDaemons/com.openssh.sshd.plist 2>/dev/null; killall sshd 2>/dev/null; killall dropbear 2>/dev/null; /usr/local/bin/dropbear -r /etc/dropbear/dropbear_rsa_host_key -p 22 -F -E &
